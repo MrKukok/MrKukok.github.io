@@ -78,6 +78,14 @@ if (isServiceWorkersSupport) {
 		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
 		#footer{font-size: 10px; color: #f9edae; margin: 30px 0 0 0;}
 		#footer a{color:#f9edae}
+        .button {background-color: #f9edae; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;}
         
 	</style>
 	
@@ -94,9 +102,9 @@ if (isServiceWorkersSupport) {
 		<div id="generator" >
 			<div id="placeholder"></div> 
 		<!-- input type="button" value="Pyk!" onclick="generator()" /> -->
-            <button class="foo-button mdc-button" onclick="generator()">Pyk!</button>
+            
 		</div>
-		
+		<button class="button" onclick="generator()">Pyk!</button>
 	
 		
 		<!-- The footer. Place any contact info ect here.-->
