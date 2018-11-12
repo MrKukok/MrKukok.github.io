@@ -48,6 +48,20 @@ mdc.ripple.MDCRipple.attachTo(button);</script>
 			document.getElementById("placeholder").appendChild(element);
 		}		
 	</script>
+    <script>
+const PATH = '/service-worker.js';
+
+let isServiceWorkersSupport = ('serviceWorker' in navigator);
+
+if (isServiceWorkersSupport) {
+    console.log('Will service worker register?');
+    navigator.serviceWorker.register(PATH).then(function () {
+        console.log("Yes it did.");
+    }).catch(function (err) {
+        console.log("No it didn't. This happened: ", err)
+    });
+}
+</script>
 	
 	
 	
@@ -59,11 +73,11 @@ mdc.ripple.MDCRipple.attachTo(button);</script>
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);}
-		#wrapper{border-left:1px solid #cccccc;border-right:1px solid #cccccc;margin:0 auto;padding: 0 20px;width: 500px; text-align: center;}
-		#generator{background:#e9f3f6;border:1px solid #cccccc;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+		#wrapper{margin:0 auto;padding: 0 20px;width: 400px; text-align: center;}
+		#generator{background:#bff7ff;border:1px solid #f9edae;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 3px;-webkit-border-radius: 2px;}
 		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
-		#footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
-		#footer a{color:#999}
+		#footer{font-size: 10px; color: #f9edae; margin: 30px 0 0 0;}
+		#footer a{color:#f9edae}
         
 	</style>
 	
@@ -78,7 +92,7 @@ mdc.ripple.MDCRipple.attachTo(button);</script>
 		
 		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
 		<div id="generator" >
-			<div id="placeholder"></div>
+			<div id="placeholder"></div> 
 		<!-- input type="button" value="Pyk!" onclick="generator()" /> -->
             <button class="foo-button mdc-button" onclick="generator()">Pyk!</button>
 		</div>
