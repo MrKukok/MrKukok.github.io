@@ -4,6 +4,7 @@ const CACHE_NAME = 'pracownik';
 let filesToCache = [
     '/',
     '/assets/ikona.png',
+    '/assets/background.jpg'
 ];
 
 self.addEventListener('install', function (evt) {
