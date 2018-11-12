@@ -6,8 +6,8 @@
 	<center><p><H1>Generator Przekręceń</H1></p></center>
 	<center><i><p>v0.01</i></p></center>
 	<meta name="description" content="." />
-	
-	
+	<link rel="stylesheet" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css" media="print">
+	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js"></script>
 	
 	<!-- The Generator script. You can move the script to an external file for better overview -->
 	<script type="text/javascript">	
@@ -48,6 +48,7 @@
 	
 	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
 	<style type="text/css">
+        
 		body{font-family: arial, serif; margin: 0;
     position: absolute;
     top: 50%;
@@ -58,6 +59,7 @@
 		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
 		#footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
 		#footer a{color:#999}
+        
 	</style>
 	
 	
@@ -72,7 +74,8 @@
 		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
 		<div id="generator" >
 			<div id="placeholder"></div>
-			<input type="button" value="Pyk!" onclick="generator()" />		
+		<!-- input type="button" value="Pyk!" onclick="generator()" /> -->
+            <button class=”foo-button mdc-button” onclick="generator()">Pyk!</button>
 		</div>
 		
 	
