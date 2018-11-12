@@ -1,5 +1,5 @@
 {
-    "short_name": "Genergel",
+    "short_name": "Generator Przekręceń",
     "name": "Generator Przekręceń",
     "icons": [
         {
@@ -23,7 +23,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/?utm_source=homescreen",
+    "start_url": "/generator-przekrecen.html",
     "background_color": "#bff7ff",
     "theme_color": "#f9edae",
     "display": "fullscreen"
