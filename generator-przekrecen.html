@@ -8,14 +8,48 @@
 	<center><i><p>v0.212</i></p></center>
 	<meta name="description" content="." />
 	<link rel="stylesheet" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css" media="print">
-	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js">
-    const button = document.querySelector(‘.foo-button’);
-mdc.ripple.MDCRipple.attachTo(button);</script>
+	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="manifest" href="/manifest.json"/>
     <link rel="icon" type="image/png"
      href="assets/ikona.png" />
 	<!-- The Generator script. You can move the script to an external file for better overview -->
+	
+	
+	
+	
+	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
+	<style type="text/css">
+        
+		body{font-family: arial, serif;color:azure; margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("assets/background.jpg");}
+		#wrapper{margin:0 auto;width: 400px; text-align: center; position opacity: 0.5}
+		#generator{background:#bff7ff;border:2px solid #f9edae;margin:20px 20px;font-size:28px;font-weight:bold;color:black;padding:50px 50px ;text-align:center;-moz-border-radius: 3px;-webkit-border-radius: 2px; opacity: 0.75}
+		#generator input{font-size:16px;font-weight:normal;margin-top: 30px;margin-bottom: 30px;text-align:center; opacity: 0.75}
+		#footer{font-size: 10px; color: #f9edae; margin: 30px 30px 0 0;text-align:center}
+		#footer a{color:#f9edae}
+        .button {background-color: #f9edae; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+     opacity: 0.75}
+        
+	</style>
+	
+	
+</head>
+<body onload="generator()">
+	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js">
+    const button = document.querySelector(‘.foo-button’);
+mdc.ripple.MDCRipple.attachTo(button);</script>
 	<script type="text/javascript">	
 	/*  Online Name Generators v.1.0 script is  made by Niels Gamborg webmaster at online-generator.com.  
 	*    The script is  free (as in "free speech" and also as in "free beer") in anyway. Use it after you own likings.
@@ -64,37 +98,6 @@ if (isServiceWorkersSupport) {
 }
 </script>
 	
-	
-	
-	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
-	<style type="text/css">
-        
-		body{font-family: arial, serif;color:azure; margin: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("assets/background.jpg");}
-		#wrapper{margin:0 auto;width: 400px; text-align: center; position opacity: 0.5}
-		#generator{background:#bff7ff;border:2px solid #f9edae;margin:20px 20px;font-size:28px;font-weight:bold;color:black;padding:50px 50px ;text-align:center;-moz-border-radius: 3px;-webkit-border-radius: 2px; opacity: 0.75}
-		#generator input{font-size:16px;font-weight:normal;margin-top: 30px;margin-bottom: 30px;text-align:center; opacity: 0.75}
-		#footer{font-size: 10px; color: #f9edae; margin: 30px 30px 0 0;text-align:center}
-		#footer a{color:#f9edae}
-        .button {background-color: #f9edae; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-     opacity: 0.75}
-        
-	</style>
-	
-	
-</head>
-<body onload="generator()">
 	<div id="wrapper">
 		
 		<!-- Change the text to your needs -->
