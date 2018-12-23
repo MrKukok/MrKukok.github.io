@@ -2,7 +2,7 @@
         body{font-family: arial, serif;
             margin: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 45%;
     transform: translate(-50%, -50%);
             background-color: aliceblue;}
@@ -11,7 +11,7 @@
 		#generator input{font-size:16px;font-weight:normal;margin-top: 30px;margin-bottom: 30px;text-align:center}
 		#footer{font-size: 10px; color: #f9edae; margin: 30px 30px 0 0;text-align:center}
 		#footer a{color:#f9edae}
-        .button {background-color: #ffffff; 
+        .button {background-color: aliceblue; 
     border: none;
     color: black;
     padding: 1px 2px;
