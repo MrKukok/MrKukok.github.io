@@ -7,8 +7,8 @@
     transform: translate(-50%, -50%);
             background-color: aliceblue;}
 		#wrapper{margin:0 auto;width: 400px; text-align: center;}
-		#generator{background:#bff7ff;border:2px solid #f9edae;margin:20px 20px;font-size:28px;font-weight:bold;padding:50px 50px 50px;text-align:center;-moz-border-radius: 3px;-webkit-border-radius: 2px;}
-		#generator input{font-size:16px;font-weight:normal;margin-top: 30px;margin-bottom: 30px;text-align:center}
+		#generator{background:#bff7ff;border:20px solid #f9edae;margin:20px 20px;font-size:28px;font-weight:bold;padding:50px 50px 50px;text-align:center;-moz-border-radius: 3px;-webkit-border-radius: 2px;}
+		#generator input{font-size:14px;font-weight:normal;margin-top: 30px;margin-bottom: 30px;text-align:center}
 		#footer{font-size: 10px; color: #f9edae; margin: 30px 30px 0 0;text-align:center}
 		#footer a{color:#f9edae}
         .button {background-color: aliceblue; 
