@@ -43,11 +43,7 @@ mdc.ripple.MDCRipple.attachTo(button);</script>
         
 	</style>
 	    <script>
-            if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/service-worker.js');
-  });
-}
+            
 const PATH = '/service-worker.js';
 
 let isServiceWorkersSupport = ('serviceWorker' in navigator);
@@ -65,7 +61,7 @@ if (isServiceWorkersSupport) {
 </head>
 <body onload="generator()">
 <center><p><H1>Generator Przekręceń</H1></p></center>
-	<center><i><p>v0.215</i></p></center>
+	<center><i><p>v0.216</i></p></center>
 	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js">
     const button = document.querySelector(‘.foo-button’);
 mdc.ripple.MDCRipple.attachTo(button);</script>
