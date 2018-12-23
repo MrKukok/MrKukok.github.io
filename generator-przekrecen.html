@@ -42,12 +42,25 @@ mdc.ripple.MDCRipple.attachTo(button);</script>
      opacity: 0.75}
         
 	</style>
-	
+	    <script>
+const PATH = '/service-worker.js';
+
+let isServiceWorkersSupport = ('serviceWorker' in navigator);
+
+if (isServiceWorkersSupport) {
+    console.log('Will service worker register?');
+    navigator.serviceWorker.register(PATH).then(function () {
+        console.log("Yes it did.");
+    }).catch(function (err) {
+        console.log("No it didn't. This happened: ", err)
+    });
+}
+</script>
 	
 </head>
 <body onload="generator()">
 <center><p><H1>Generator Przekręceń</H1></p></center>
-	<center><i><p>v0.213</i></p></center>
+	<center><i><p>v0.214</i></p></center>
 	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js">
     const button = document.querySelector(‘.foo-button’);
 mdc.ripple.MDCRipple.attachTo(button);</script>
@@ -84,20 +97,7 @@ mdc.ripple.MDCRipple.attachTo(button);</script>
 			document.getElementById("placeholder").appendChild(element);
 		}		
 	</script>
-    <script>
-const PATH = '/service-worker.js';
 
-let isServiceWorkersSupport = ('serviceWorker' in navigator);
-
-if (isServiceWorkersSupport) {
-    console.log('Will service worker register?');
-    navigator.serviceWorker.register(PATH).then(function () {
-        console.log("Yes it did.");
-    }).catch(function (err) {
-        console.log("No it didn't. This happened: ", err)
-    });
-}
-</script>
 	
 	
 	
