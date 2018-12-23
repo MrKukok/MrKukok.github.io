@@ -23,7 +23,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/generator-przekrecen.html",
+    "start_url": "/generator-przekrecen",
     "background_color": "#bff7ff",
     "theme_color": "#f9edae",
     "display": "fullscreen"
