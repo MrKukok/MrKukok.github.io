@@ -5,6 +5,7 @@ let filesToCache = [
     '/',
     '/assets/ikona.png',
     '/assets/background.jpg'
+    '/manifest.json'
 ];
 
 self.addEventListener('install', function (evt) {
