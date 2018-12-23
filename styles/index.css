@@ -3,7 +3,7 @@
             margin: 0;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 45%;
     transform: translate(-50%, -50%);
             background-color: aliceblue;}
 		#wrapper{margin:0 auto;width: 400px; text-align: center;}
