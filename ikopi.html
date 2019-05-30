@@ -1,0 +1,144 @@
+<!DOCTYPE html>	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Generator Przekręceń</title>
+	<meta http-equiv="Content-Type" name='viewport' content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="theme-color" content="#c6b473"/>
+	<meta name="description" content="." />
+	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js">
+    const button = document.querySelector(‘.foo-button’);
+mdc.ripple.MDCRipple.attachTo(button);</script>
+	<link rel="stylesheet" href="/styles/generator.css" type="text/css">
+
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" type="image/png"
+     href="assets/ikona.png" />
+
+	
+	    <script>
+            
+const PATH = '/service-worker.js';
+
+let isServiceWorkersSupport = ('serviceWorker' in navigator);
+
+if (isServiceWorkersSupport) {
+    console.log('Will service worker register?');
+    navigator.serviceWorker.register(PATH).then(function () {
+        console.log("Yes it did.");
+    }).catch(function (err) {
+        console.log("No it didn't. This happened: ", err)
+    });
+}
+</script>
+	
+</head>
+<body onload="generator()">
+<center><p><H1>Generator Nagłówków Pikio</H1></p></center>
+	<center><p><i>v0.1</i></p></center>
+	<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js">
+    const button = document.querySelector(‘.foo-button’);
+mdc.ripple.MDCRipple.attachTo(button);</script>
+	<script type="text/javascript">	
+	/*  Online Name Generators v.1.0 script is  made by Niels Gamborg webmaster at online-generator.com.  
+	*    The script is  free (as in "free speech" and also as in "free beer") in anyway. Use it after you own likings.
+	*    Peace and love. :)
+	*/	
+		function generator(){
+			// Add your own words to the wordlist. Be carefull to obey the showed syntax
+			
+			var wordlist1 = ["Andrzej","Karol"];
+			
+			var wordlist2 = ["Karolina","Wojciech"];
+            
+            var wordlist3 = ["Skandal! ","To obrzydliwe! "];
+			
+			var wordlist4 = ["Kupił Bitcoina. ","Wziął kredyt. "]
+            
+            var wordlist5 = ["Tańczyła Conga. ","Przeczytała Książkę. "];
+			
+			var wordlist6 = ["Żyje. ","Skacze do góry. "]
+			
+            var wordlistZ = ["Polacy są w szoku!","Politycy zacierają ręce!"]
+
+            
+			// Random numbers are made 
+            var ania = parseInt(Math.random() * 2);
+			var basia = parseInt(Math.random() * 5);
+            var chris = parseInt(Math.random() * 2);
+            var danuta = parseInt(Math.random() * 2);
+			var randomNumber1 = parseInt(Math.random() * wordlist1.length);
+			var randomNumber2 = parseInt(Math.random() * wordlist2.length);
+            var randomNumber3 = parseInt(Math.random() * wordlist3.length);
+			var randomNumber4 = parseInt(Math.random() * wordlist4.length);
+            var randomNumber5 = parseInt(Math.random() * wordlist5.length);
+			var randomNumber6 = parseInt(Math.random() * wordlist6.length);
+            var randomNumberZ = parseInt(Math.random() * wordlistZ.length);
+		//	var name = wordlist1[randomNumber1] + " " + wordlist2[randomNumber2];	
+            var name = "";
+            if (ania == 2) {
+                name += wordlist3[randomNumber3];
+            }
+            if (basia == 1) {
+                name += wordlist1[randomNumber1];
+            }            
+            if (basia == 2) {
+                name += wordlist2[randomNumber2];
+            }           
+            if (basia == 3) {
+                name += wordlist4[randomNumber4] + wordlistZ[randomNumberZ];
+            }           
+            if (basia == 4) {
+                name += wordlist5[randomNumber5] + wordlistZ[randomNumberZ];
+            }           
+            if (basia == 5) {
+                name += wordlist6[randomNumber6] + wordlistZ[randomNumberZ];
+            }
+            
+                
+
+			//alert(name); //Remove first to slashes to alert the name
+			
+			//If there's already a name it is removed  
+			if(document.getElementById("result")){
+				document.getElementById("placeholder").removeChild(document.getElementById("result"));
+			}
+			// A div element is created to show the generated name. The Name is added as a textnode. Textnode is added to the placeholder.
+			var element = document.createElement("div");
+			element.setAttribute("id", "result");
+			element.appendChild(document.createTextNode(name));
+			document.getElementById("placeholder").appendChild(element);
+		}		
+	</script>
+
+	
+	
+	
+	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
+	
+	
+
+	
+	<div id="wrapper">
+		
+		<!-- Change the text to your needs -->
+	
+	
+		
+		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
+		<div id="generator" >
+			<div id="placeholder"></div> 
+		<!-- input type="button" value="Pyk!" onclick="generator()" /> -->
+            
+		</div>
+		<button class="button" onclick="generator()">Pyk!</button>
+	
+		
+		<!-- The footer. Place any contact info ect here.-->
+		<div id="footer">
+		
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "short_name": "Generator",
+    "name": "Generator Przekręceń",
+    "icons": [
+        {
+            "src": "/assets/ikona.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/ikona.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/ikona.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/ikona.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/generator-przekrecen",
+    "background_color": "#c6b473",
+    "theme_color": "#f9edae",
+    "display": "fullscreen"
+}
