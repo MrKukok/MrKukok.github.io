@@ -3,8 +3,8 @@ const CACHE_NAME = 'pracownik';
 // List of files which are store in cache.
 let filesToCache = [
     '/',
-    '/assets/ikona.png',
-    '/assets/background.jpg'
+    'assets/ikona.png',
+    'assets/background.jpg'
     
 ];
 
